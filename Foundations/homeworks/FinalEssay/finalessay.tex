@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{url}
+\usepackage{fullpage}
+
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+\rhead{Lee \thepage} 
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
+
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+\usepackage{setspace}
+\doublespacing
+\begin{document}
+
+\begin{flushleft}
+
+Sunny Lee\\
+Amanda Hattaway \\
+Foundations of Applied Math \\
+November 23 2020\\
+
+\begin{center}
+  Actuaries and Data Science during COVID-19
+\end{center}
+
+\setlength{\parindent}{0.5in} In light of COVID-19, people have had to adapt their 
+lifestyles to ensure the safety of people and reduce the spread of COVID-19. These 
+restrictions, however do not come from nowhere. Actuaries and data scientists 
+analyze the data coming from those effected by COVID-19 in order to try and model
+certain important aspects of daily life. Some aspects include hospital beds which 
+could be at a premium in highly susceptible areas. In order to inform as many 
+people as possible, actuaries may want to explain very complex models so more 
+people can understand what certain models are predicting.
+
+With COVID-19 being so prevalent in daily life, there is a great deal of data which 
+actuaries and data scientists can use. Using data, actuaries can model certain aspects 
+of COVID-19 related consequences such as hospital bed utilization and virus infection rate. 
+By building these models, actuaries can extrapolate and try to predict what is coming 
+in the near future. One such model could help with the utilization of beds in hospitals
+and the virus infection rates of COVID-19\cite{Eaton}.
+Modeling hospital bed utilization will help hospitals use their beds much more 
+efficiently which will decrease congestion in hospitals and allow for more people 
+who need care to get what they need. Modeling virus infection rates will also show 
+how susceptible people are to the virus and how likely it is for the virus to spread 
+in densely populated areas. This kind of statistical analysis can help 
+give advice to the general population in order to control the spread and overall 
+consequences COVID-19 has on the world. 
+
+Actuaries are also very versed in communicating. Their job usually requires them to 
+explain what they have done in layman's terms. This ability to translate complex 
+models and put them in a way that anyone can understand is crucial to spreading the 
+knowledge about COVID-19. Actuaries can also give insight into models and compare 
+those models to other models\cite{Eaton}. Since there are many ways of looking 
+at and analyzing data, it is always good to compare models to see what other people 
+have done. Some models will make different assumptions which could result in 
+drastically different looking models. Some models may even be made to misguide 
+instead of inform, so actuaries could call these models out as false. 
+
+COVID-19 has brought on a mandatory surge of data science and actuarial work. With 
+massive amounts of data to use, there are many ways one could interpret that data. 
+By using COVID-19 data, actuaries can effectively model hospital bed utilization 
+to prevent hospitals from gettting flooded. However, these models are also 
+very complex and might not be very intuitive. Thus, it is also important for 
+actuaries to communicate about their models as well as others. 
+
+\newpage
+\begin{thebibliography}{98}
+
+  \bibitem{Eaton} Eaton, Robert. 2020. Actuaries in the Time of Coronavirus. \href{https://theactuarymagazine.org/actuaries-in-the-time-of-coronavirus/}{https://theactuarymagazine.org/actuaries-in-the-time-of-coronavirus/}. Accessed 23 November 2020.
+
+\end{thebibliography}
+
+\end{flushleft}
+\end{document}
+\}
