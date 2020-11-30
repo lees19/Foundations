@@ -1,0 +1,66 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+    language        = Python,
+    frame           = lines, 
+    basicstyle      = \footnotesize,
+    keywordstyle    = \color{blue},
+    stringstyle     = \color{green},
+    commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+\begin{document}
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+
+        \item Looking at the differential equation $dI/dt$, we find that $I(t)$ will
+        be increasing when $aSI > rI$ and decreasing when $rI > aSI$. From $dI/dt$, 
+        we can conclude the spread of the disease depends on the interactions between 
+        the susceptible and the infected with some transmission rate $a$. By this model, 
+        since the number of infected goes up with the interactions between $S$ and $I$, 
+        quarantining would reduce the amount of interactions, thus, reducing the 
+        rate at which $I$ grows. 
+        \item 
+        \begin{eqnarray*}
+            \frac{dS}{dt} = -a S I, \quad \frac{dI}{dt} = a S I - r I \\
+            \frac{dIdt}{dtdS} = \frac{a S I - r I}{-a S I}\\
+            \frac{aSI}{-aSI} + \frac{rI}{aSI}\\
+            -1 + \frac{rI}{aSI} \\
+            -1 + \frac{r}{aS} \\
+            -1 + \frac{1}{R_0 S}
+        \end{eqnarray*}
+        In order to find the second derivative, we must integrate with respect to $S$. 
+        \begin{eqnarray*}
+            
+        \end{eqnarray*}
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
