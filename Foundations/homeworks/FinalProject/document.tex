@@ -1,0 +1,100 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage{bookmark}
+\usetheme[left]{Goettingen}
+
+\beamertemplatenavigationsymbolsempty
+
+\setbeamercolor{top} {bg=gray, fg=black}
+\setbeamercolor{bot}{bg=lightgray, fg=black}
+
+\title{SIR Modeling on H1N1}
+\author{Connor Stevens, Sunny Lee}
+
+
+
+\begin{document}
+
+\frame{
+
+	\titlepage
+}
+
+\section{Modifying Section 2's Equation}
+\frame{
+\frametitle{Modifying Question 2's Equations}
+By introducing a death rate, we must now modify our differential equations: 
+\begin{align*}
+    S'(t) &= -a S I \\
+    I'(t) &= a S I + b R - r I - c I\\
+    R'(t) &= r I - b R\\
+    D'(t) &= c I
+\end{align*}
+
+}
+
+\section{Finding background information on H1N1}
+\frame{
+\frametitle{Finding background information on H1N1}
+$R_0 = 1.5$ \cite{NCBI R_0}\\
+$r = \frac{1}{6}$ \cite{NCBI}\\
+$a = .25$ \cite{NCBI R_0} \cite{NCBI}\\
+$c = .0021$\cite{CDC2010} \\
+$b = 9.3\%$\cite{Reinfection}\\
+US Population 2009: roughly $306$ million \cite{census}\\
+Total infection from April to October 17, 2009: roughly $22$ million\cite{CDCOct}
+}
+
+\section{Model and Results}
+\frame{
+\frametitle{Model and Results}
+
+\includegraphics[scale = .5]{SIRFigure.png}\\
+\includegraphics[scale = .7]{SIRVals.png}
+}
+
+\section{Conclusion}
+\frame{
+\frametitle{Conclusion}
+Our model predicted that after 175 days, H1N1 would have killed 11.5\% of the population (approximately 35.19 million people).\\ 
+\vskip1em
+The actual amount of deaths was around 12,500 (or .004\% of the population.\\ 
+\vskip1em
+We didn't for when a vaccine was released.\\ 
+\vskip1em
+It was hard to pinpoint exact initial values for our model to work.\\
+
+}
+
+%Fix Later
+\section{References}
+\frame{
+\frametitle{References}
+\begin{thebibliography}{98}
+
+%contagious period/recovery rate
+\bibitem{NCBI} H1N1 Influenza \href{https://www.ncbi.nlm.nih.gov/books/NBK513241}{https://www.ncbi.nlm.nih.gov/books/NBK513241}. Accessed 3 December 2020.
+
+%estimated R_0 value
+\bibitem{NCBI R_0} Modeling influenza epidemics and pandemics: insights into the future of swine flu (H1N1) \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2715422/}{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2715422/}. Accessed 3 December 2020.
+
+%estimated deaths globally
+\bibitem{CDC2010} Burden Estimates for the 2010-2011 Influenza Season \href{https://www.cdc.gov/flu/pandemic-resources/2009-h1n1-pandemic.html}{https://www.cdc.gov/flu/pandemic-resources/2009-h1n1-pandemic.html}. Accessed 3 December 2020.
+
+\bibitem{CDCOct} Burden Estimates for the 2010-2011 Influenza Season \href{https://www.cdc.gov/h1n1flu/estimates/April_October_17.htm}{https://www.cdc.gov/h1n1flu/estimates/April_October_17.htm}. Accessed 4 December 2020.
+
+\end{thebibliography}
+}
+
+\frame{
+\frametitle{References}
+\begin{thebibliography}{98}
+\bibitem{Reinfection} Reinfection with influenza A (H2N2, H3N2, and H1N1) viruses in soldiers and students in Japan \href{https://pubmed.ncbi.nlm.nih.gov/3941288/}{https://pubmed.ncbi.nlm.nih.gov/3941288/}. Accessed 7 December 2020.
+
+\bibitem{census} Statistical Abstract of the United States: 2011 Section 1 \href{https://www.census.gov/library/publications/2010/compendia/statab/130ed/population.html}{https://www.census.gov/library/publications/2010/compendia/statab/130ed/population.html} Accessed 7 December 2020.
+
+\end{thebibliography}
+}
+
+\end{document}

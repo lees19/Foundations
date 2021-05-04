@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Modifying Section 2's Equation}{2}{0}{1}
+\beamer@sectionintoc {2}{Finding background information on H1N1}{3}{0}{2}
+\beamer@sectionintoc {3}{Model and Results}{4}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{5}{0}{4}
+\beamer@sectionintoc {5}{References}{6}{0}{5}
